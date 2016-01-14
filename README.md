@@ -1,5 +1,13 @@
 # Archivos de configuración
 
+## Crear enlaces simbolicos:
+
+```shell
+$ ln -s ~/dotfiles/zshrc ~/.zshrc
+$ ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
+$ ln -s ~/dotfiles/alias.zsh ~/.oh-my-zsh/lib/alias.zsh
+```
+
 ## zsh
 ### instalación de zsh
 ```shell
