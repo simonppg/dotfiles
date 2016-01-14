@@ -1,6 +1,6 @@
 # Archivos de configuración
 
-## Crear enlaces simbolicos:
+## Crear enlaces simbólicos:
 
 ```shell
 $ ln -s ~/dotfiles/zshrc ~/.zshrc
@@ -14,5 +14,5 @@ $ ln -s ~/dotfiles/alias.zsh ~/.oh-my-zsh/lib/alias.zsh
 $ sudo apt-get install zsh
 $ chsh -s /bin/zsh
 $ exec /bin/zsh --login
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+$ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
