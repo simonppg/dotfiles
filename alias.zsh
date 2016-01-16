@@ -1,5 +1,5 @@
 # aliases for Tmux
-alias tmux='tmux -2'
+alias tmux='tmux new-session -A -s home'
 alias ta='tmux attach -t'
 alias tnew='tmux new -s'
 alias tls='tmux ls'
