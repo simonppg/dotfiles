@@ -3,6 +3,7 @@
 ## Crear enlaces simbólicos:
 
 ```shell
+$ touch ~/dotfiles/env_vars
 $ ln -s ~/dotfiles/zshrc ~/.zshrc
 $ ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 $ ln -s ~/dotfiles/alias.zsh ~/.oh-my-zsh/lib/alias.zsh

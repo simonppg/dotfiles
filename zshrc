@@ -58,6 +58,10 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+if [[ -r $HOME/dotfiles/env_vars ]]; then
+	source $HOME/dotfiles/env_vars
+fi
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
