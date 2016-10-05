@@ -7,3 +7,6 @@ if [ ! -d "$BASH_IT_DIR" ]; then
 	cd $HOME/.bash_it
 	./install.sh
 fi
+
+#copy dotfiles
+ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
