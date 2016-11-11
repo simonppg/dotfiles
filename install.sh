@@ -10,3 +10,6 @@ fi
 
 #copy dotfiles
 ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
+echo "if [ -f $HOME/dotfiles/dockerfunc ]; then" >> $HOME/.bashrc
+echo "  . $HOME/dotfiles/dockerfunc" >> $HOME/.bashrc
+echo "fi" >> $HOME/.bashrc
