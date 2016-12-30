@@ -1,0 +1,17 @@
+#!/bin/bash
+
+function clean_containers() {
+	docker rm -f `docker ps -a -q`
+}
+
+function clean_images() {
+	docker rmi -f `docker images -a -q`
+}
+
+function list_containers() {
+	docker ps -a
+}
+
+function list_images() {
+	docker images
+}

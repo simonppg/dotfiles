@@ -1,19 +1,8 @@
-# Archivos de configuración
+# dotfiles
 
-## Crear enlaces simbólicos:
-
+## Install
 ```shell
-$ touch ~/dotfiles/env_vars
-$ ln -s ~/dotfiles/zshrc ~/.zshrc
-$ ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
-$ ln -s ~/dotfiles/alias.zsh ~/.oh-my-zsh/lib/alias.zsh
-```
-
-## zsh
-### instalación de zsh
-```shell
-$ sudo apt-get install zsh
-$ chsh -s /bin/zsh
-$ exec /bin/zsh --login
-$ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+$ git clone https://github.com/simonppg/dotfiles.git ${HOME}/dotfiles
+$ cd ${HOME}/dotfiles
+$ ./install.sh
 ```
