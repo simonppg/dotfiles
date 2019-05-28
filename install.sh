@@ -9,4 +9,9 @@ if [ ! -d "$BASH_IT_DIR" ]; then
 fi
 
 #copy dotfiles
+TMUX_DIR=~/.tmux
+if [ ! -d "$TMUX_DIR" ]; then
+    mkdir -vp $TMUX_DIR/plugins/
+    git clone https://github.com/tmux-plugins/tpm $TMUX_DIR/plugins/tpm
+fi
 ln -s -F ~/dotfiles/tmux.conf ~/.tmux.conf
