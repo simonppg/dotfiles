@@ -4,7 +4,7 @@
 BASH_IT_DIR=~/.bash_it
 if [ ! -d "$BASH_IT_DIR" ]; then
 	git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
-	cd $HOME/.bash_it
+	cd $BASH_IT_DIR || { echo "cd $BASH_IT_DIR"; exit 127; }
 	./install.sh
 fi
 
@@ -15,5 +15,5 @@ if [ ! -d "$TMUX_DIR" ]; then
     git clone https://github.com/tmux-plugins/tpm $TMUX_DIR/plugins/tpm
 fi
 
-ln -s -F ~/dotfiles/tmux.conf ~/.tmux.conf
-ln -s -F ~/dotfiles/Xresources ~/.Xresources
+ln -nsf ~/dotfiles/tmux.conf ~/.tmux.conf
+ln -nsf ~/dotfiles/Xresources ~/.Xresources
