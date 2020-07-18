@@ -14,4 +14,6 @@ if [ ! -d "$TMUX_DIR" ]; then
     mkdir -vp $TMUX_DIR/plugins/
     git clone https://github.com/tmux-plugins/tpm $TMUX_DIR/plugins/tpm
 fi
+
 ln -s -F ~/dotfiles/tmux.conf ~/.tmux.conf
+ln -s -F ~/dotfiles/Xresources ~/.Xresources
