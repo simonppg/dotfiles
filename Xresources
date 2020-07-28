@@ -1,6 +1,9 @@
 ! Apply changes with: $ xrdb ~/.Xresources
 
-URxvt.font: xft:Hack Nerd Font:style=Bold Italic:size=12
+URxvt.font:           xft:Hack Nerd Font Mono:size=12:style=Regular
+URxvt.boldFont:       xft:Hack Nerd Font Mono:size=12:style=Bold
+URxvt.italicFont:     xft:Hack Nerd Font Mono:size=12:style=Italic
+URxvt.boldItalicFont: xft:Hack Nerd Font Mono:size=12:style=Bold Italic
 URxvt.scrollBar: false
 
 
