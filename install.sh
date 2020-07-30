@@ -19,3 +19,4 @@ ln -nsf ~/dotfiles/tmux.conf ~/.tmux.conf
 ln -nsf ~/dotfiles/Xresources ~/.Xresources
 ln -nsf ~/dotfiles/i3/config ~/.config/i3/config
 ln -nsf ~/dotfiles/inputrc ~/.inputrc
+ln -nsf ~/dotfiles/psqlrc ~/.psqlrc
