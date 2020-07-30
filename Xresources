@@ -1,5 +1,8 @@
 ! Apply changes with: $ xrdb ~/.Xresources
 
+! Plugins
+URxvt.perl-ext-common: default,resize-font
+
 URxvt.font:           xft:Hack Nerd Font Mono:size=12:style=Regular
 URxvt.boldFont:       xft:Hack Nerd Font Mono:size=12:style=Bold
 URxvt.italicFont:     xft:Hack Nerd Font Mono:size=12:style=Italic

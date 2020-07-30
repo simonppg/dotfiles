@@ -15,6 +15,14 @@ if [ ! -d "$TMUX_DIR" ]; then
     git clone https://github.com/tmux-plugins/tpm $TMUX_DIR/plugins/tpm
 fi
 
+# Install urxvrt-resize-font perl-lib
+URXVT_DIR=~/.urxvt
+if [ ! -d "$URXVT_DIR" ]; then
+  mkdir -vp "$URXVT_DIR/ext"
+  git clone https://github.com/simmel/urxvt-resize-font ~/tmp/urxvt-resize-font
+  mv ~/tmp/urxvt-resize-font/resize-font $URXVT_DIR/ext/
+fi
+
 ln -nsf ~/dotfiles/tmux.conf ~/.tmux.conf
 ln -nsf ~/dotfiles/Xresources ~/.Xresources
 ln -nsf ~/dotfiles/i3/config ~/.config/i3/config
