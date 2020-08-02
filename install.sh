@@ -23,8 +23,16 @@ if [ ! -d "$URXVT_DIR" ]; then
   mv ~/tmp/urxvt-resize-font/resize-font $URXVT_DIR/ext/
 fi
 
+# Install polybar config
+POLYBAR_DIR=~/.config/polybar
+if [ ! -d "$POLYBAR_DIR" ]; then
+  mkdir -vp "$POLYBAR_DIR"
+fi
+
 ln -nsf ~/dotfiles/tmux.conf ~/.tmux.conf
 ln -nsf ~/dotfiles/Xresources ~/.Xresources
 ln -nsf ~/dotfiles/i3/config ~/.config/i3/config
 ln -nsf ~/dotfiles/inputrc ~/.inputrc
 ln -nsf ~/dotfiles/psqlrc ~/.psqlrc
+ln -nsf ~/dotfiles/polybar/config ~/.config/polybar/config
+ln -nsf ~/dotfiles/polybar/launch.sh ~/.config/polybar/launch.sh
