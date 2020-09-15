@@ -3,12 +3,14 @@
 ! Plugins
 URxvt.perl-ext-common: default,resize-font
 
-URxvt.font:           xft:Hack Nerd Font Mono:size=12:style=Regular
-URxvt.boldFont:       xft:Hack Nerd Font Mono:size=12:style=Bold
-URxvt.italicFont:     xft:Hack Nerd Font Mono:size=12:style=Italic
-URxvt.boldItalicFont: xft:Hack Nerd Font Mono:size=12:style=Bold Italic
+URxvt.font:           xft:JetBrains Mono:size=12:style=Regular
+URxvt.boldFont:       xft:JetBrains Mono:size=12:style=Bold
+URxvt.italicFont:     xft:JetBrains Mono:size=12:style=Italic
+URxvt.boldItalicFont: xft:JetBrains Mono:size=12:style=Bold Italic
 URxvt.scrollBar: false
 
+URxvt*depth: 32
+URxvt*background: rgba:0001/0000/0200/c800
 
 ! Color Scheme !
 
