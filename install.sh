@@ -29,6 +29,12 @@ if [ ! -d "$POLYBAR_DIR" ]; then
   mkdir -vp "$POLYBAR_DIR"
 fi
 
+# Install vscode config
+VSCODE_DIR=~/.config/Code/User
+if [ ! -d "$VSCODE_DIR" ]; then
+  mkdir -vp "$VSCODE_DIR"
+fi
+
 ln -nsf ~/dotfiles/tmux.conf ~/.tmux.conf
 ln -nsf ~/dotfiles/Xresources ~/.Xresources
 ln -nsf ~/dotfiles/i3/config ~/.config/i3/config
@@ -36,3 +42,4 @@ ln -nsf ~/dotfiles/inputrc ~/.inputrc
 ln -nsf ~/dotfiles/psqlrc ~/.psqlrc
 ln -nsf ~/dotfiles/polybar/config ~/.config/polybar/config
 ln -nsf ~/dotfiles/polybar/launch.sh ~/.config/polybar/launch.sh
+ln -nsf ~/dotfiles/vscode/settings.json $VSCODE_DIR/settings.json

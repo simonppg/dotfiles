@@ -1,0 +1,93 @@
+{
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "[json]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "terminal.integrated.rendererType": "dom",
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/env/**": true,
+        "**/venv/**": true,
+        "env-*": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/env": true,
+        "**/venv": true
+    },
+    "files.exclude": {
+        "*.sublime-*": true,
+        "**/__pycache__": true,
+        "**/.DS_Store": true,
+        "**/.git": true,
+        "**/.pytest_cache": true,
+        "**/.vscode": true,
+        "**/node_modules": true,
+        "env*": true,
+        "venv": true
+    },
+    "terminal.external.linuxExec": "gnome-shell",
+    "grunt.autoDetect": "off",
+    "gulp.autoDetect": "off",
+    "update.mode": "start",
+    "update.showReleaseNotes": true,
+    "editor.fontFamily": "'JetBrains Mono','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontFamily": "monospace",
+    "todohighlight.keywords": [
+        {
+            "text": "NOTE:"
+        }
+    ],
+    "todo-tree.tree.showScanModeButton": false,
+    "diffEditor.renderSideBySide": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true,
+    "editor.formatOnSave": false,
+    "workbench.colorCustomizations": {
+        "tab.activeBorder": "#ff0000",
+        "tab.unfocusedActiveBorder": "#000000"
+    },
+    "workbench.sideBar.location": "right",
+    // Custom cursor
+    "editor.cursorBlinking": "phase",
+    "editor.cursorWidth": 4,
+    "editor.tokenColorCustomizations": {
+        "comments": "#d4922f"
+    },
+    "typescript.preferences.importModuleSpecifier": "relative",
+    // Font Size
+    "editor.fontSize": 22,
+    // Controls if file decorations should use badges.
+    "explorer.decorations.badges": false,
+    // Mandatory  The integration with LINUX Bar title and context menu
+    "window.titleBarStyle": "custom",
+    // Material icon settings
+    "material-icon-theme.folders.color": "#26A5FF",
+    "material-icon-theme.folders.theme": "specific",
+    "material-icon-theme.hidesExplorerArrows": true,
+    "window.zoomLevel": 1,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false,
+}
