@@ -14,8 +14,6 @@
         "editor.defaultFormatter": "dbaeumer.vscode-eslint"
     },
     "workbench.iconTheme": "material-icon-theme",
-    "diffEditor.ignoreTrimWhitespace": false,
-    "gitlens.hovers.currentLine.over": "line",
     "terminal.integrated.rendererType": "dom",
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
@@ -70,7 +68,6 @@
     },
     "workbench.sideBar.location": "right",
     // Custom cursor
-    "editor.cursorBlinking": "phase",
     "editor.cursorWidth": 4,
     "editor.tokenColorCustomizations": {
         "comments": "#d4922f"
@@ -86,8 +83,14 @@
     "material-icon-theme.folders.color": "#26A5FF",
     "material-icon-theme.folders.theme": "specific",
     "material-icon-theme.hidesExplorerArrows": true,
-    "window.zoomLevel": 1,
     "typescript.updateImportsOnFileMove.enabled": "always",
     "editor.formatOnPaste": false,
     "editor.formatOnType": false,
+    "editor.scrollbar.verticalScrollbarSize": 0,
+    "editor.renderLineHighlight": "none",
+    "editor.minimap.enabled": true,
+    "openapi.defaultPreviewRenderer": "redoc",
+    "liveshare.authenticationProvider": "GitHub",
+    "liveshare.presence": true,
+    "window.zoomLevel": 1,
 }
