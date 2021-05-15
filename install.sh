@@ -35,6 +35,7 @@ if [ ! -d "$VSCODE_DIR" ]; then
   mkdir -vp "$VSCODE_DIR"
 fi
 
+ln -nsf ~/dotfiles/rofi/config.rasi ~/.config/config.rasi
 ln -nsf ~/dotfiles/tmux.conf ~/.tmux.conf
 ln -nsf ~/dotfiles/Xresources ~/.Xresources
 ln -nsf ~/dotfiles/i3/config ~/.config/i3/config
