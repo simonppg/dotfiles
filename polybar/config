@@ -57,7 +57,7 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 font-3 = Hack Nerd Font
 
-modules-left = i3
+modules-left = bspwm
 modules-center = mpd
 modules-right = alsa pulseaudio xkeyboard wlan eth battery temperature date powermenu
 
@@ -90,6 +90,9 @@ label-indicator-padding = 2
 label-indicator-margin = 1
 label-indicator-background = ${colors.secondary}
 label-indicator-underline = ${colors.secondary}
+
+[module/bspwm]
+type = internal/bspwm
 
 [module/i3]
 type = internal/i3
