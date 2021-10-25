@@ -2,6 +2,9 @@
 
 function main() {
   set -x # echo commands
+  SCRIPT_PATH="${0%/*}"
+  # No matter where you are, the script always runs in this directory
+  cd "$SCRIPT_PATH" || exit
 
   #install Bash-it
   BASH_IT_DIR=~/.bash_it
