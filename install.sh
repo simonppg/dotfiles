@@ -82,6 +82,18 @@ function installVscode() {
 }
 
 function installRofi() {
+  ROFI_DIR=~/rofi # Rofi themes repository
+  ROFI_CONFIG_DIR=~/.config/rofi
+
+  rm -rf $ROFI_CONFIG_DIR
+
+  if ! isDirectory $ROFI_DIR; then
+    cloneDeep adi1090x/rofi.git $ROFI_DIR
+  fi
+
+  # 1 means 1080p
+  (cd $ROFI_DIR && printf '1\n' | ~/rofi/setup.sh)
+
   makeLink "$DOTFILES_DIR"/rofi/config.rasi ~/.config/config.rasi
 }
 
