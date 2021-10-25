@@ -24,11 +24,19 @@ function makeLink() {
   ln -nsf "$1" "$2"
 }
 
+function clone() {
+  git clone https://github.com/"$1" "$2"
+}
+
+function cloneDeep() {
+  git clone --depth=1 https://github.com/"$1" "$2"
+}
+
 function installBashIt() {
   #install Bash-it
   BASH_IT_DIR=~/.bash_it
   if ! isDirectory "$BASH_IT_DIR"; then
-    git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
+    cloneDeep Bash-it/bash-it.git ~/.bash_it
     cd $BASH_IT_DIR || { echo "cd $BASH_IT_DIR"; exit 127; }
     ./install.sh
   fi
@@ -38,7 +46,7 @@ function installTmux() {
   TMUX_DIR=~/.tmux
   if ! isDirectory "$TMUX_DIR"; then
     makeDirectory $TMUX_DIR/plugins/
-    git clone https://github.com/tmux-plugins/tpm $TMUX_DIR/plugins/tpm
+    clone tmux-plugins/tpm $TMUX_DIR/plugins/tpm
   fi
 
   makeLink "$DOTFILES_DIR"/tmux.conf ~/.tmux.conf
@@ -49,7 +57,7 @@ function installUrxvt() {
   URXVT_DIR=~/.urxvt
   if ! isDirectory "$URXVT_DIR"; then
     makeDirectory "$URXVT_DIR/ext"
-    git clone https://github.com/simmel/urxvt-resize-font ~/tmp/urxvt-resize-font
+    clone simmel/urxvt-resize-font ~/tmp/urxvt-resize-font
     mv ~/tmp/urxvt-resize-font/resize-font $URXVT_DIR/ext/
   fi
 }
