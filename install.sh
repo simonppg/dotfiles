@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x # echo commands
+
 #install Bash-it
 BASH_IT_DIR=~/.bash_it
 if [ ! -d "$BASH_IT_DIR" ]; then
